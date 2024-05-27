@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+----------------------------------------- */
+
+body {
+    color: #333;
+    font-weight: 700;
+    line-height: 1.75;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+/* 共通
+------------------------------------------ */
+
+
+/* Cover
+------------------------------------------ */
+
+.cover {
+
+}
+
+.cover__top {
+  position: relative;
+  /* height: 100%; */
+  z-index: -1;
+}
+
+.cover__imageWrap {
+}
+
+.cover__image {
+  width: 100vw;
+  padding-bottom: 157px;
+}
+
+.cover__title {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: Marcellus;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.25;
+}
+
+.cover__catch {
+  position: absolute;
+  bottom: 26px;
+}
+
+.cover__catchMain {
+  font-size: 41px;
+  font-family: Marcellus;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+}
+
+.cover__catchSub {
+  font-size: 20px;
+  font-family: Noto Serif JP;
+  letter-spacing: 0.3em;
+  line-height: 1.45;
+  font-weight: 400;
+}
