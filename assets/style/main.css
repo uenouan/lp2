@@ -4,10 +4,10 @@
 ----------------------------------------- */
 
 body {
-  color: #333;
-  font-weight: 700;
-  line-height: 1.75;
-  font-family: 'Noto Sans JP', sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Noto Serif JP';
+  overflow-x: hidden;
 }
 
 a {
@@ -27,6 +27,76 @@ li {
 ------------------------------------------ */
 
 /* ボタン */
+.purchase {
+  padding: 50px 0;
+}
+
+.purchase__container {
+  background-color: #F0F4FF;
+  width: 358px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .purchase__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    max-width: 1000px;
+    justify-content: center;
+    padding: 40px 48px;
+    column-gap: 64px;
+    row-gap: 20px;
+  }
+}
+
+.purchase__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .purchase__txt {
+    justify-content: start;
+    align-items: start;
+    padding: unset;
+  }
+}
+
+.purchase__product {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .purchase__product {
+    font-size: 24px;
+  }
+}
+
+.purchase__price {
+  font-size: 14px;
+}
+
+.purchase__btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-bottom: 34px;
+}
+
+@media (min-width: 768px) {
+  .purchase__btn {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: unset;
+    column-gap: 32px;
+  }
+}
+
 .button {
   position: relative;
   display: flex;
@@ -51,9 +121,6 @@ li {
   background-color: #5DD5AB;
 }
 
-.button--box {
-}
-
 /* Cover
 ------------------------------------------ */
 
@@ -69,21 +136,23 @@ li {
 
 .cover__image {
   width: 100vw;
-  padding-bottom: 131px;
+  padding-bottom: 100px;
 }
 
 @media (min-width: 768px) {
   .cover__image {
-      height: 720px;
-      padding-bottom: unset;
-      object-fit: cover;
+    height: 720px;
+    width: 100vw;
+    padding-bottom: unset;
+    object-fit: cover;
   }
 }
 
 @media (min-width: 1501px) {
   .cover__image {
     width: 100vw;
-    height: unset;
+    /* width: 99vw; */
+    height: auto;
     padding-bottom: unset;
   }
 }
@@ -103,6 +172,7 @@ li {
 .cover__catch {
   position: absolute;
   bottom: 0;
+  left: 5.9%;
 }
 
 @media (min-width: 768px) {
@@ -127,4 +197,258 @@ li {
   letter-spacing: 0.3em;
   line-height: 1.45;
   font-weight: 400;
+}
+
+/* Introduction
+------------------------------------------ */
+
+.intro__container {
+  position: relative;
+}
+
+.intro__image {
+  width: 100vw;
+  height: unset;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .intro__image {
+    height: 720px;
+    padding-bottom: unset;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1501px) {
+  .intro__image {
+    width: 100vw;
+    /* width: 99vw; */
+    height: unset;
+    padding-bottom: unset;
+  }
+}
+
+.intro__textWrap {
+  position: absolute;
+  top: 48px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .intro__textWrap {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    width: 90vw;
+    max-width: 1000px;
+    justify-content: end;
+    align-items: start;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .intro__text {
+    width: 47%;
+    max-width: 429px;
+    align-items: start;
+    position: static;
+  }
+}
+
+.intro__catchEn {
+  font-size: 30px;
+  font-family: Garamond;
+  font-weight: 700;
+  color: #fff;
+  width: 358px;
+}
+
+@media (min-width: 768px) {
+  .intro__catchEn {
+    font-size: 38px;
+    width: unset;
+  }
+}
+
+.intro__catchJa {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  width: 358px;
+}
+
+@media (min-width: 768px) {
+  .intro__catchJa {
+    width: unset;
+  }
+}
+
+.intro__description {
+  line-height: 2.28;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  width: 358px;
+}
+
+@media (min-width: 768px) {
+  .intro__description {
+    width: unset;
+  }
+}
+
+/* Voice
+------------------------------------------ */
+
+.voice__title {
+  font-size: 30px;
+  font-family: Garamond;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px 0 4px;
+}
+
+.voice__subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+/* Slick */
+@media (min-width: 768px) {
+  .voice__slick {
+    /* max-width: 1040px; */
+    max-width: 1166px;
+    /* width: calc(90vw + 40px); */
+    width: 100vw;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+}
+
+.voice__slickItem {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DBF7F9;
+  width: 280px !important;
+  margin: 0 auto;
+  padding: 28px 15px;
+}
+
+@media (min-width: 768px) {
+  .voice__slickItem {
+    width: unset !important;
+    margin: 0 5% !important;
+    padding: 40px 16px;
+  }
+}
+
+.voice__slickName {
+  font-size: 14px;
+  margin: 8px 0 20px;
+}
+
+@media (min-width: 768px) {
+  .voice__slickName {
+    font-size: 15px;
+  }
+}
+
+.voice__slickText {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .voice__slickText {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: calc((100% - 32px) / 2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .slick-arrow {
+    top: calc((100% - 48px) / 2);
+  }
+}
+
+.prev-arrow {
+  left: 5px;
+}
+
+.next-arrow {
+  right: 5px;
+}
+
+/* Slickドット */
+.slick-dotted.slick-slider {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .slick-dotted.slick-slider {
+    margin-bottom: 33px;
+  }
+}
+
+.slick-dots {
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .slick-dots {
+    bottom: -33px;
+    width: 90%;
+  }
+}
+
+.slick-dots li {
+  width: 9px;
+  height: 9px;
+  margin: 0;
+}
+
+.slick-dots li button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #EEEEEE;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slick-dots li button::before {
+  width: 9px;
+  height: 9px;
+  line-height: normal;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li.slick-active button::before {
+  color: #00AFBF;
+  background-color: #00AFBF;
+  opacity: 1;
 }
