@@ -24,15 +24,14 @@ $('.voice__slick').slick({
   ]
 });
 
-
 // アコーディオン
 $('.faq__answer').hide();
-$('.faq__question .arrow .arrow-up').hide();
+$('.faq__question .faq__arrow .faq__arrowUp').hide();
 $('.faq__question').on('click', function (e) {
 
   var content = $(this).next();
-  var arrowup = $(this).children().children('.arrow-up');
-  var arrowdown = $(this).children().children('.arrow-down');
+  var arrowup = $(this).children().children('.faq__arrowUp');
+  var arrowdown = $(this).children().children('.faq__arrowDown');
 
   content.slideToggle();
   arrowup.slideToggle(0);
