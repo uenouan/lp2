@@ -124,14 +124,10 @@ li {
 /* Cover
 ------------------------------------------ */
 
-.cover {}
-
 .cover__top {
   position: relative;
   z-index: -1;
 }
-
-.cover__imageWrap {}
 
 .cover__image {
   width: 100%;
