@@ -2,7 +2,7 @@
 $('.voice__slick').slick({
   infinite: true,
   // autoplay: true,
-  autoplaySpeed: 5000,
+  // autoplaySpeed: 5000,
   slidesToShow: 3,
   slidesToScroll: 3,
   arrows: true,
@@ -22,4 +22,20 @@ $('.voice__slick').slick({
       }
     }
   ]
+});
+
+
+// アコーディオン
+$('.faq__answer').hide();
+$('.faq__question .arrow .arrow-up').hide();
+$('.faq__question').on('click', function (e) {
+
+  var content = $(this).next();
+  var arrowup = $(this).children().children('.arrow-up');
+  var arrowdown = $(this).children().children('.arrow-down');
+
+  content.slideToggle();
+  arrowup.slideToggle(0);
+  arrowdown.slideToggle(0);
+
 });
