@@ -7,8 +7,6 @@ $('.voice__slick').slick({
   slidesToScroll: 3,
   arrows: true,
   dots: true,
-  // centerMode: true,
-  // centerPadding: '0',
   prevArrow: '<img src="assets/image/arrow_left_pc_01.png" class="slide-arrow prev-arrow">',
   nextArrow: '<img src="assets/image/arrow_right_pc_01.png" class="slide-arrow next-arrow">',
   responsive: [
@@ -36,5 +34,23 @@ $('.faq__question').on('click', function (e) {
   content.slideToggle();
   arrowup.slideToggle(0);
   arrowdown.slideToggle(0);
+
+});
+
+// ページトップへ戻る
+var buttonToTop = $('.footer__arrow');
+var position = 0;
+var speed = 600;
+
+// ページトップへ戻るボタンをクリックしたら
+buttonToTop.on('click', function() {
+  // console.log('click');
+  console.log(position);
+
+  // アニメーションをしながらページトップに移動
+  $("html, body").animate({
+    scrollTop: position
+  }, speed, "swing");
+  return false;
 
 });

@@ -694,7 +694,8 @@ li {
   background-color: #0071CE;
   color: #fff;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer__container {
@@ -710,7 +711,7 @@ li {
     justify-content: space-between;
     height: 104px;
     padding: 0 32px;
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
   }
 }
@@ -778,4 +779,29 @@ li {
     font-size: 12px;
     width: 241px;
   }
+}
+
+.footer__arrowWrap {
+  width: 358px;
+  display: flex;
+  justify-content: end;
+  margin-top: -40px;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  .footer__arrowWrap {
+    width: 100%;
+    max-width: 1264px;
+    padding-right: 32px;
+  }
+}
+
+.footer__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #0071CE;
 }
