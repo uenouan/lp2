@@ -260,7 +260,7 @@ li {
 
 .intro__catchEn {
   font-size: 30px;
-  font-family: Garamond;
+  font-family: 'EB Garamond';
   font-weight: 700;
   color: #fff;
   width: 358px;
@@ -314,7 +314,7 @@ li {
 
 .voice__title {
   font-size: 30px;
-  font-family: Garamond;
+  font-family: 'EB Garamond';
   font-weight: 700;
   text-align: center;
   margin-bottom: 4px;
@@ -494,7 +494,7 @@ li {
 
 .faq__title {
   font-size: 30px;
-  font-family: Garamond;
+  font-family: 'EB Garamond';
   font-weight: 700;
   text-align: center;
   margin-bottom: 4px;
@@ -551,7 +551,7 @@ li {
   align-items: start;
   margin: 22px 12px 0 16px;
   font-weight: 500;
-  font-family: Garamond;
+  font-family: 'EB Garamond';
   letter-spacing: 0.05em;
 }
 
@@ -574,7 +574,7 @@ li {
   align-items: start;
   margin: 5px 12px 0 16px;
   font-weight: 500;
-  font-family: Garamond;
+  font-family: 'EB Garamond';
   letter-spacing: 0.05em;
 }
 
