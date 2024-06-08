@@ -44,7 +44,7 @@ li {
     width: 90vw;
     max-width: 1000px;
     justify-content: center;
-    padding: 40px 48px;
+    padding: 40px 46px;
     column-gap: 64px;
     row-gap: 20px;
   }
@@ -68,6 +68,8 @@ li {
 .purchase__product {
   font-weight: 600;
   font-size: 18px;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
 }
 
 @media (min-width: 768px) {
@@ -78,6 +80,13 @@ li {
 
 .purchase__price {
   font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+  .purchase__price {
+    font-size: 16px;
+  }
 }
 
 .purchase__btn {
@@ -131,7 +140,7 @@ li {
 
 .cover__image {
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 107px;
 }
 
 @media (min-width: 768px) {
@@ -143,7 +152,7 @@ li {
   }
 }
 
-@media (min-width: 1501px) {
+@media (min-width: 1500px) {
   .cover__image {
     width: 100%;
     height: auto;
@@ -154,13 +163,21 @@ li {
 .cover__title {
   position: absolute;
   top: 24px;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, 0);
   font-family: Marcellus;
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 0.2em;
   line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .cover__title {
+    font-size: 28px;
+    top: 31px;
+    left: 50%;
+  }
 }
 
 .cover__catch {
@@ -185,12 +202,24 @@ li {
   font-weight: 400;
 }
 
+@media (min-width: 768px) {
+  .cover__catchMain {
+    font-size: 50px;
+  }
+}
+
 .cover__catchSub {
   font-size: 20px;
-  font-family: Noto Serif JP;
   letter-spacing: 0.3em;
   line-height: 1.45;
   font-weight: 400;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .cover__catchSub {
+    font-size: 25px;
+  }
 }
 
 /* Introduction
@@ -214,7 +243,7 @@ li {
   }
 }
 
-@media (min-width: 1501px) {
+@media (min-width: 1500px) {
   .intro__image {
     width: 100%;
     height: unset;
@@ -234,7 +263,7 @@ li {
     left: 50%;
     display: flex;
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1016px;
     justify-content: end;
     align-items: start;
     transform: translate(-50%, -50%);
@@ -264,6 +293,8 @@ li {
   font-weight: 700;
   color: #fff;
   width: 358px;
+  text-align: center;
+  margin-bottom: 9px;
 }
 
 @media (min-width: 768px) {
@@ -278,6 +309,8 @@ li {
   font-weight: 600;
   color: #fff;
   width: 358px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
@@ -297,6 +330,7 @@ li {
 @media (min-width: 768px) {
   .intro__description {
     width: unset;
+    margin-top: 11px;
   }
 }
 
@@ -318,6 +352,7 @@ li {
   font-weight: 700;
   text-align: center;
   margin-bottom: 4px;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 768px) {
@@ -332,6 +367,7 @@ li {
   font-weight: 600;
   text-align: center;
   margin-bottom: 36px;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 768px) {
@@ -364,14 +400,14 @@ li {
   background-color: #DBF7F9;
   width: 280px !important;
   margin: 0 auto;
-  padding: 28px 15px;
+  padding: 28px 15px 21px;
 }
 
 @media (min-width: 768px) {
   .voice__slickItem {
     width: unset !important;
     margin: 0 5% !important;
-    padding: 40px 16px;
+    padding: 40px 16px 36px;
   }
 }
 
@@ -383,17 +419,20 @@ li {
 @media (min-width: 768px) {
   .voice__slickName {
     font-size: 15px;
+    margin-bottom: 15px;
   }
 }
 
 .voice__slickText {
   font-size: 14px;
+  line-height: 2;
 }
 
 @media (min-width: 768px) {
   .voice__slickText {
     font-size: 16px;
     line-height: 1.75;
+    width: 98%;
   }
 }
 
@@ -412,11 +451,23 @@ li {
 }
 
 .prev-arrow {
-  left: 5px;
+  left: 16px;
+}
+
+@media (min-width: 768px) {
+  .prev-arrow {
+    left: 6px;
+  }
 }
 
 .next-arrow {
-  right: 5px;
+  right: 16px;
+}
+
+@media (min-width: 768px) {
+  .next-arrow {
+    right: 6px;
+  }
 }
 
 /* Slickドット */
@@ -488,7 +539,7 @@ li {
 
 @media (min-width: 768px) {
   .faq__container {
-    padding: 97px 15px 97px;
+    padding: 40px 15px;
   }
 }
 
@@ -498,6 +549,7 @@ li {
   font-weight: 700;
   text-align: center;
   margin-bottom: 4px;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 768px) {
@@ -512,6 +564,7 @@ li {
   font-weight: 600;
   text-align: center;
   margin-bottom: 37px;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 768px) {
@@ -549,7 +602,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: start;
-  margin: 22px 12px 0 16px;
+  margin: 21px 12px 0 16px;
   font-weight: 500;
   font-family: 'EB Garamond';
   letter-spacing: 0.05em;
@@ -561,7 +614,7 @@ li {
     width: 18px;
     height: 23px;
     /* padding: 24px; */
-    margin: 30px 16px 0 24px;
+    margin: 25px 16px 0 24px;
   }
 }
 
@@ -572,7 +625,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: start;
-  margin: 5px 12px 0 16px;
+  margin: 3px 12px 0 16px;
   font-weight: 500;
   font-family: 'EB Garamond';
   letter-spacing: 0.05em;
@@ -584,14 +637,14 @@ li {
     width: 18px;
     height: 23px;
     /* padding: 24px; */
-    margin: 0 16px 0 24px;
+    margin: 2px 16px 0 24px;
   }
 }
 
 .faq__question {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: left;
   align-items: start;
   position: relative;
   cursor: pointer;
@@ -599,7 +652,7 @@ li {
 
 .faq__questionTxt {
   width: 269px;
-  margin: 16px 0 17px;
+  margin: 18px 0 15.5px;
   text-align: left;
   font-size: 15px;
   color: #444444;
@@ -609,7 +662,7 @@ li {
 
 @media (min-width: 768px) {
   .faq__questionTxt {
-    margin: 26px 0;
+    margin: 25px 0 18px;
     width: 748px;
   }
 }
@@ -664,11 +717,18 @@ li {
   justify-content: space-between;
   align-items: start;
   border-radius: 0 0 8px 8px;
+  margin-top: -5px;
+}
+
+@media (min-width: 768px) {
+  .faq__answer {
+    margin-top: -3px;
+  }
 }
 
 .faq__answerTxt {
   width: auto;
-  margin: 0 18px 20px 0;
+  margin: 0 18px 30px 0;
   text-align: left;
   font-size: 15px;
   color: #444444;
@@ -678,7 +738,7 @@ li {
 
 @media (min-width: 768px) {
   .faq__answerTxt {
-    margin: 0 24px 30px 0;
+    margin: 0 24px 22px 0;
     width: auto;
   }
 }
@@ -735,7 +795,7 @@ li {
   }
 }
 
-.footer__link {
+.footer__nav {
   font-size: 12px;
   width: 300px;
   display: flex;
@@ -744,7 +804,7 @@ li {
 }
 
 @media (min-width: 768px) {
-  .footer__link {
+  .footer__nav {
     font-size: 12px;
     width: auto;
     column-gap: 12px;
@@ -752,7 +812,7 @@ li {
 }
 
 @media (min-width: 1024px) {
-  .footer__link {
+  .footer__nav {
     font-size: 14px;
     width: auto;
     column-gap: 32px;
@@ -773,7 +833,7 @@ li {
 @media (min-width: 1024px) {
   .footer__copyright {
     font-size: 12px;
-    width: 241px;
+    width: 242px;
   }
 }
 
